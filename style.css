@@ -1,0 +1,268 @@
+body{
+    color: white; 
+    background-image: url("https://safras.com.br/wp-content/uploads/2021/11/defensivosaplicacao-digital.agrishow.jpg");
+    font-family: "Poppins", sans-serif;
+    top: 0%;
+    left: -1%;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-repeat: no-repeat;
+}
+#dados-do-produtor{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    height: 20%;
+    width: 90%;
+}
+.produtor{
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 30px;
+    border-color: #2b2b2b;
+    position: relative;
+    left: 1%;
+    top: 0%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    column-gap: 60px;
+    row-gap: 30px;
+    grid-template-columns: auto auto auto auto;
+}
+@media (min-width: 300px) {
+    .cards { grid-template-columns: repeat(1, 1fr); }
+  }
+@media (min-width: 600px) {
+    .produtor { grid-template-columns: repeat(1, 1fr); }
+}
+@media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(1, 1fr); }
+  }
+#section-name{
+    position: relative;
+    top: 1%;
+    left: 0%;
+}
+#secao-quadros{
+    font-family: "Lucida Console", "Courier New", monospace;
+    display: inline-grid;
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    width: 100vw;
+    height: 20vh;
+    column-gap: 220px;
+    row-gap: 30px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+@media (max-width: 600px) {
+    .quadro { grid-template-columns:(1,); }
+  }
+@media (max-width: 900px) {
+    .quadro { grid-template-columns:(1, 3fr); }
+  }
+#table{
+    position: absolute;
+    top: 110%;
+    width: 100%;
+    color: black;
+}
+.quadros{
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 25px 150px 200px 150px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 2%;
+}
+#avisos{
+    position: absolute; 
+    top: 38%;
+    left: 7%;  
+    background: rgba(214, 117, 100, 0.88);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+#cotacoes{
+    position: absolute; 
+    top: 38%;  
+    left: 35%; 
+    background: rgba(92, 194, 138, 0.88);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+#clima{
+    position: absolute; 
+    top: 38%;  
+    left: 66%; 
+    background: rgb(36, 74, 124, 0.88);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.styled-table {
+    border-collapse: collapse;
+    width: 97%;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+th:hover{
+    color: coral;
+}
+#table2{
+    position: absolute;
+    top: 160%;
+    width: 100%;
+    color: black;
+}
+.styled-table2 {
+    border-collapse: collapse;
+    width: 97%;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}.styled-table2 thead tr {
+    background-color: #143eb1;
+    color: #ffffff;
+    text-align: left;
+}.styled-table2 th,
+.styled-table2 td {
+    padding: 12px 15px;
+}
+.styled-table2 tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table2 tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table2 tbody tr:last-of-type {
+    border-bottom: 2px solid #306ebe;
+}
+.styled-table2 tbody tr.active-row {
+    font-weight: bold;
+    color: #306ebe;
+}
+th:hover{
+    color: coral;
+}
+#table2{
+    position: absolute;
+    top: 160%;
+    width: 100%;
+    color: black;
+}
+.topnav {
+    color: white;
+    border-radius: 2%;
+    width: 97%;
+    overflow: hidden;
+}
+.topnav a {
+float: right;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+.topnav a.active {
+background-color: #04AA6D;
+color: rgb(31, 31, 31);
+}
+.topnav .icon {
+display: none;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 800px) {
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+    float: right;
+    display: block;
+}
+}
+@media screen and (max-width: 600px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+}
+.topnav h1{
+    color: white;
+    position: relative;
+    left: 2%;
+    float: left;
+    font-size: 24px;
+}
+#footer{
+    left: -3%;
+    float: bottom;
+    position: absolute;
+    width: 100vw;
+    height: 20%;
+    background-color: rgb(85, 85, 85);
+    top: 210%;
+    column-gap: 150px;
+    row-gap: 30px;
+    display: inline-grid;
+}
+#footer ul{
+    position: absolute;
+    float: right;
+    left: 70%;
+}
+.about{
+    position: relative;
+    float: left;
+    left: 3%;
+}

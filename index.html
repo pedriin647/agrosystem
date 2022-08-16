@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home de Usuário</title>
+    <script>
+    </script>
+    <style>
+        body{
+            color: white;
+            font-family: "Poppins", sans-serif;
+            background-image: url("https://safras.com.br/wp-content/uploads/2021/11/defensivosaplicacao-digital.agrishow.jpg");
+            top: 0%;
+            left: -1%;
+            width: 100vw;
+            height: 100vh;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            background-repeat: no-repeat;
+        }
+        nav{
+            position: fixed;
+            color: white;
+            background-image: linear-gradient(to right, rgb(118, 170, 118), rgb(0, 124, 0));
+            height: 10vh;
+            width: 100vw;
+            top: -1%;
+            left: 0%;
+        } 
+        nav h1{
+            position: relative;
+            top: 15%;
+            float: left;
+            left: 3%;
+        }
+        nav a{
+            float: right;
+            top: 27%;
+            position:absolute;
+            left: 80vw;
+            color: white;
+        }
+        nav h3{
+            position: absolute;
+            left: 80vw;
+            float: right;
+            top: 40%;
+        }
+        #dados-do-produtor{
+            position: absolute;
+            top: 10%;
+            left: 3%;
+            height: 20%;
+            width: 90%;
+        }
+        .produtor{
+            position: relative;
+            left: 1%;
+            top: 0%;
+            display: grid;
+            column-gap: 60px;
+            row-gap: 30px;
+            grid-template-columns: auto auto auto auto;
+        }
+        #section-name{
+            position: relative;
+            top: 1%;
+            left: 0%;
+        }
+        #quadro{
+            display: inline-grid;
+            position: absolute;
+            top: 35%;
+            left: 0%;
+            width: 100vw;
+            height: 20vh;
+            column-gap: 150px;
+            row-gap: 30px;
+        }
+        #table{
+            position: absolute;
+            top: 110%;
+            width: 100%;
+            color: black;
+        }
+        .quadros{
+            padding: 25px 150px 200px 150px;
+            border-color: rgb(0, 0, 0);
+            border-radius: 2%;
+        }
+        .styled-table {
+            border-collapse: collapse;
+            width: 97%;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+        }.styled-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }.styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+        .styled-table tbody tr.active-row {
+            font-weight: bold;
+            color: #009879;
+        }
+        th:hover{
+            color: coral;
+        }
+        #table2{
+            position: absolute;
+            top: 160%;
+            width: 100%;
+            color: black;
+        }
+        .styled-table2 {
+            border-collapse: collapse;
+            width: 97%;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+        }.styled-table2 thead tr {
+            background-color: #143eb1;
+            color: #ffffff;
+            text-align: left;
+        }.styled-table2 th,
+        .styled-table2 td {
+            padding: 12px 15px;
+        }
+        .styled-table2 tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table2 tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table2 tbody tr:last-of-type {
+            border-bottom: 2px solid #306ebe;
+        }
+        .styled-table2 tbody tr.active-row {
+            font-weight: bold;
+            color: #306ebe;
+        }
+        th:hover{
+            color: coral;
+        }
+        #table2{
+            position: absolute;
+            top: 160%;
+            width: 100%;
+            color: black;
+        }
+    </style>
+    <head>
+
+    <body>
+        <header>
+            <nav>
+
+            <h1>PLATAFORMA GESTOR AGRO DOCS</h1>
+
+            <ul>
+                <a href="#">Configurar Minha Conta</a><br>
+
+                <h3 id="date">
+                <script>
+                date = new Date();
+                year = date.getFullYear();
+                month = date.getMonth() + 1;
+                day = date.getDate();
+                document.getElementById("date").innerHTML = "Data:   " + month + "/" + day + "/" + year;
+                </script>
+            </h3>
+            </ul> 
+        </nav>
+    </header>
+
+        <main>
+                
+            <div>
+                <section id="dados-do-produtor" style="color: black;">
+                        <div id="section-name">
+                            <h1 style="color: white;"><u><b>Dados do Produtor:</b></u></h1>
+                        </div>
+                        <div class="produtor">
+                            <div id="nome" style=" padding: 10px 15px; background-color: aliceblue; border-radius: 5%; grid-column-start: 1; grid-column-end: 3;  grid-row-start: 1; grid-row-end: 3;"><B>Nome:</B> Arthur Lima</div>
+                            <div id="Email" style=" padding: 10px 15px; background-color: aliceblue; border-radius: 5%;"><B>Email:</B> arthurlimaaed@gmail.com</div>
+                            <div id="Endereço" style=" padding: 10px 15px; background-color: aliceblue; border-radius: 5%;"><B>Endereço:</B> Rua dos Cornos, n33 - Belo Horzionte Minas Gerais</div>
+                            <div id="CPF" style=" padding: 10px 15px; background-color: aliceblue; border-radius: 5%;"><B>CPF</B> 123.456.789-00</div>
+                            <div id="telefone" style=" padding: 10px 15px; background-color: aliceblue; border-radius: 5%;"><B>Telefone:</B> +55 31 98888-8888</div>
+                        </div>
+                </section>
+                </div>
+
+                <section id="quadro">
+                    <img  style="width: 100vw; left: 0%;">
+                    <div >
+                        <div class="quadros" id="avisos" style="position: absolute; top: 38%; left: 7%; background-color: rgb(117, 104, 104);"><H3>Avisos &#10071;</H3></div>
+                        <div class="quadros" id="cotacoes" style="position: absolute; top: 38%;  left: 35%; background-color: rgb(92, 194, 138)"><H3>Cotações &#128202;</H3></div>
+                        <div class="quadros" id="clima" style="position: absolute; top: 38%;  left: 65%; background-color: rgb(36, 74, 124)"><H3>Clima &#127781;</H3></div>
+                    </div>
+    
+                </section>
+
+
+                <br>
+                <section id="table">
+                    <h1><b>Fazendas &#127806;</b></h1>
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Descrição</th>
+                                <th>Município</th>
+                                <th>Área</th>
+                                <th>Matrícula</th>
+                                <th>Pendência</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="active-row">
+                                <td>1</td>
+                                <td><a href="#" style="color: #009879">Fazenda A</a></td>
+                                <td>Sete Lagoas (MG)</td>
+                                <td>200</td>
+                                <td>1.234</td>
+                                <td style="color: red;">SIM</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>2</td>
+                                <td><a href="#" style="color: #009879">Fazenda B</a></td>
+                                <td>Sete Lagoas (MG)</td>
+                                <td>400</td>
+                                <td>4.321</td>
+                                <td style="color: blue;">NÃO</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>3</td>
+                                <td><a href="#" style="color: #009879">Fazenda C</a></td>
+                                <td>Curvelo (MG)</td>
+                                <td>100</td>
+                                <td>54.688</td>
+                                <td style="color: red;">SIM</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>4</td>
+                                <td><a href="#" style="color: #009879">Fazenda D</a></td>
+                                <td>Corinto (MG)</td>
+                                <td>650</td>
+                                <td>9.887</td>
+                                <td style="color: red;">SIM</td>
+                            </tr>
+                            <!-- and so on... -->
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="table2">
+                    <h1><b>Análises &#128202;</b></h1>
+                    <table class="styled-table2">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Descrição</th>
+                                <th>Matrícula</th>
+                                <th>Fundiário</th>
+                                <th>Ambiental</th>
+                                <th>Jurídico</th>
+                                <th>Financeiro</th>
+                                <th>Produtivo</th>
+                                <th>Métricas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="active-row">
+                                <td>1</td>
+                                <td><a href="#" style="color: #009879">Fazenda A</a></td>
+                                <td>Sete Lagoas (MG)</td>
+                                <td>200</td>
+                                <td>1.234</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>2</td>
+                                <td><a href="#" style="color: #009879">Fazenda B</a></td>
+                                <td>Sete Lagoas (MG)</td>
+                                <td>400</td>
+                                <td>4.321</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>3</td>
+                                <td><a href="#" style="color: #009879">Fazenda C</a></td>
+                                <td>Curvelo (MG)</td>
+                                <td>100</td>
+                                <td>54.688</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>4</td>
+                                <td><a href="#" style="color: #009879">Fazenda D</a></td>
+                                <td>Corinto (MG)</td>
+                                <td>650</td>
+                                <td>9.887</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                            </tr>
+                            <!-- and so on... -->
+                        </tbody>
+                    </table>
+                </section>
+            
+        </main>
+        
+    </body>
+
+</html>
+
+
+

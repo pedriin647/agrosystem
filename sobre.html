@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home de Usuário</title>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+    </script>
+    <style src="style.css" type="text/css">
+        
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <head>
+
+    <body>
+        <header>
+            <div class="topnav" id="myTopnav">
+            <h1>PLATAFORMA GESTOR AGRO DOCS</h1>
+            <a href="#dados-do-produtor" class="active">Perfil</a>
+            <a href="#quadro">Avisos</a>
+            <a href="#table">Fazendas</a>
+            <a href="#table2">Análises</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+</div>
+    </header>
+
+        <main>
+
+            <h3 id="date" style=" position: absolute; left: 80%;">
+                <script>
+                date = new Date();
+                year = date.getFullYear();
+                month = date.getMonth() + 1;
+                day = date.getDate();
+                document.getElementById("date").innerHTML = "Data:   " + month + "/" + day + "/" + year;
+                </script>
+            </h3>
+                
+            <div>
+                <section id="dados-do-produtor" style="color: black;">
+                        <div id="section-name">
+                            <h1 style="color: white;"><u><b>Dados do Produtor:</b></u></h1>
+                        </div>
+                        <div class="produtor">
+                            <div id="nome" style=" padding: 10px 15px; background-color: aliceblue; border-radius: 2%; grid-column-start: 1; grid-column-end: 3;  grid-row-start: 1; grid-row-end: 3;"><B>Nome:</B> Arthur Lima</div>
+                            <div id="Email" style=" padding: 10px 15px; background-color: aliceblue; border-radius: 2%;"><B>Email:</B> arthurlimaaed@gmail.com</div>
+                            <div id="Endereço" style=" padding: 10px 15px; background-color: aliceblue; border-radius: 2%;"><B>Endereço:</B> Rua dos Cornos, n33 - Belo Horzionte Minas Gerais</div>
+                            <div id="CPF" style=" padding: 10px 15px; background-color: aliceblue; border-radius: 2%;"><B>CPF</B> 123.456.789-00</div>
+                            <div id="telefone" style=" padding: 10px 15px; background-color: aliceblue; border-radius: 2%;"><B>Telefone:</B> +55 31 98888-8888</div>
+                        </div>
+                </section>
+                </div><br>
+
+                <section id="secao-quadros">
+                    <img  style="width: 100vw; left: 0%;">
+                    <div id="quadro">
+                        <div class="quadros" id="avisos"><H3>Avisos &#10071;</H3></div>
+                        <div class="quadros" id="cotacoes"><H3>Cotações &#128202;</H3></div>
+                        <div class="quadros" id="clima"><H3>Clima &#127781;</H3></div>
+                    </div>
+ 
+                </section>
+
+
+                <br>
+                <section id="table">
+                    <h1><b>Fazendas &#127806;</b></h1>
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Descrição</th>
+                                <th>Município</th>
+                                <th>Área</th>
+                                <th>Matrícula</th>
+                                <th>Pendência</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="active-row">
+                                <td>1</td>
+                                <td><a href="#" style="color: #009879">Fazenda A</a></td>
+                                <td>Sete Lagoas (MG)</td>
+                                <td>200</td>
+                                <td>1.234</td>
+                                <td style="color: red;">SIM</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>2</td>
+                                <td><a href="#" style="color: #009879">Fazenda B</a></td>
+                                <td>Sete Lagoas (MG)</td>
+                                <td>400</td>
+                                <td>4.321</td>
+                                <td style="color: blue;">NÃO</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>3</td>
+                                <td><a href="#" style="color: #009879">Fazenda C</a></td>
+                                <td>Curvelo (MG)</td>
+                                <td>100</td>
+                                <td>54.688</td>
+                                <td style="color: red;">SIM</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>4</td>
+                                <td><a href="#" style="color: #009879">Fazenda D</a></td>
+                                <td>Corinto (MG)</td>
+                                <td>650</td>
+                                <td>9.887</td>
+                                <td style="color: red;">SIM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="table2">
+                    <h1><b>Análises &#128202;</b></h1>
+                    <table class="styled-table2">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Descrição</th>
+                                <th>Matrícula</th>
+                                <th>Fundiário</th>
+                                <th>Ambiental</th>
+                                <th>Jurídico</th>
+                                <th>Financeiro</th>
+                                <th>Produtivo</th>
+                                <th>Métricas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="active-row">
+                                <td>1</td>
+                                <td><a href="#" style="color: #009879">Fazenda A</a></td>
+                                <td>Sete Lagoas (MG)</td>
+                                <td>200</td>
+                                <td>1.234</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>2</td>
+                                <td><a href="#" style="color: #009879">Fazenda B</a></td>
+                                <td>Sete Lagoas (MG)</td>
+                                <td>400</td>
+                                <td>4.321</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>3</td>
+                                <td><a href="#" style="color: #009879">Fazenda C</a></td>
+                                <td>Curvelo (MG)</td>
+                                <td>100</td>
+                                <td>54.688</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>4</td>
+                                <td><a href="#" style="color: #009879">Fazenda D</a></td>
+                                <td>Corinto (MG)</td>
+                                <td>650</td>
+                                <td>9.887</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                                <td style="color: red;">SIM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+
+                <section id="footer"> 
+                    <Ul><br>
+                        <LI>Contato: 319284654</LI>
+                        <li>Email: amishdfiasnf@gmail.com</li>
+                        <li>Localização: Rua Baiano n66, Belo Horizonte MG</li>
+                    </Ul>
+
+                    <div class="about">
+                        <h1>Sobre nosso Sistema:</h1>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing <wbr> elit, sed do eiusmod tempor incid<br>idunt ut labore<wbr> et dolore"
+                    </p>
+                    </div>
+                    
+                </section>
+            
+        </main>
+        
+    </body>
+
+</html>
+
+
+
