@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16"  href="./images/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <title>Home de Usuário</title>
     <script>
-        function myFunction() {
-        var x = document.getElementById("myTopnav");
+        function botaonav() {
+        var x = document.getElementById("header");
         if (x.className === "topnav") {
             x.className += " responsive";
         } else {
@@ -26,58 +29,47 @@
 
     <body>
         <header>
-            <div class="topnav" id="myTopnav">
+            <div class="topnav zindex" id="header">
             <h1>PLATAFORMA GESTOR AGRO DOCS</h1>
-            <a href="#dados-do-produtor" class="active">Perfil</a>
+            <a href="#dados" class="active">Perfil</a>
             <a href="#quadro">Avisos</a>
-            <a href="#table">Fazendas</a>
-            <a href="#table2">Análises</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="#tabela">Fazendas</a>
+            <a href="#tabela2">Análises</a>
+            <a href="javascript:void(0);" class="icon" onclick="botaonav()">
                 <i class="fa fa-bars"></i>
             </a>
-</div>
+        </div>
     </header>
 
         <main>
 
-            <h3 id="date" style=" position: absolute; left: 80%;">
-                <script>
-                date = new Date();
-                year = date.getFullYear();
-                month = date.getMonth() + 1;
-                day = date.getDate();
-                document.getElementById("date").innerHTML = "Data:   " + month + "/" + day + "/" + year;
-                </script>
-            </h3>
+            <div class="main">
                 
-            <div>
-                <section id="dados-do-produtor" style="color: black;">
-                        <div id="section-name">
-                            <h1 style="color: white;"><u><b>Dados do Produtor:</b></u></h1>
-                        </div>
-                        <div class="produtor">
-                            <div id="nome" style=" padding: 10px 15px; background-color: aliceblue; border-radius: 2%; grid-column-start: 1; grid-column-end: 3;  grid-row-start: 1; grid-row-end: 3;"><B>Nome:</B> Arthur Lima</div>
-                            <div id="Email" style=" padding: 10px 15px; background-color: aliceblue; border-radius: 2%;"><B>Email:</B> arthurlimaaed@gmail.com</div>
-                            <div id="Endereço" style=" padding: 10px 15px; background-color: aliceblue; border-radius: 2%;"><B>Endereço:</B> Rua dos Cornos, n33 - Belo Horzionte Minas Gerais</div>
-                            <div id="CPF" style=" padding: 10px 15px; background-color: aliceblue; border-radius: 2%;"><B>CPF</B> 123.456.789-00</div>
-                            <div id="telefone" style=" padding: 10px 15px; background-color: aliceblue; border-radius: 2%;"><B>Telefone:</B> +55 31 98888-8888</div>
-                        </div>
+                <section id="dados" style="color: black;">
+                    <div id="section-name">
+                        <h1 style="color: white;"><u><b>Dados do Produtor:</b></u></h1>
+                    </div>
+                    <div class="produtor">
+                        <div id="nome" class="dados-produtor"><B>Nome:</B> Arthur Lima</div>
+                        <div id="Email" class="dados-produtor"><B>Email:</B> arthurlimaaed@gmail.com</div>
+                        <div id="Endereço" class="dados-produtor"><B>Endereço:</B> Rua dos Cornos, n33 - Belo Horzionte Minas Gerais</div>
+                        <div id="CPF" class="dados-produtor"><B>CPF</B> 123.456.789-00</div>
+                        <div id="telefone" class="dados-produtor"><B>Telefone:</B> +55 31 98888-8888</div>
+                    </div>
                 </section>
-                </div><br>
 
                 <section id="secao-quadros">
-                    <img  style="width: 100vw; left: 0%;">
-                    <div id="quadro">
                         <div class="quadros" id="avisos"><H3>Avisos &#10071;</H3></div>
                         <div class="quadros" id="cotacoes"><H3>Cotações &#128202;</H3></div>
                         <div class="quadros" id="clima"><H3>Clima &#127781;</H3></div>
-                    </div>
- 
                 </section>
 
+            </div>
 
-                <br>
-                <section id="table">
+
+            <br>
+            <div class="tabelas">
+                <section id="tabela">
                     <h1><b>Fazendas &#127806;</b></h1>
                     <table class="styled-table">
                         <thead>
@@ -126,8 +118,9 @@
                         </tbody>
                     </table>
                 </section>
-
-                <section id="table2">
+    
+                
+                <section id="tabela2">
                     <h1><b>Análises &#128202;</b></h1>
                     <table class="styled-table2">
                         <thead>
@@ -191,23 +184,33 @@
                         </tbody>
                     </table>
                 </section>
+            </div>
+            
+            
 
 
-                <section id="footer"> 
-                    <Ul><br>
-                        <LI>Contato: 319284654</LI>
-                        <li>Email: amishdfiasnf@gmail.com</li>
-                        <li>Localização: Rua Baiano n66, Belo Horizonte MG</li>
-                    </Ul>
+ 
+            <section id="footer"> 
 
                     <div class="about">
                         <h1>Sobre nosso Sistema:</h1>
                     <p>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing <wbr> elit, sed do eiusmod tempor incid<br>idunt ut labore<wbr> et dolore"
+                        "Lorem ipsum dolor sit amet, consectetur <br>adipiscing <wbr> elit, sed do eiusmod tempor incid<br>idunt ut labore<wbr> et dolore"
                     </p>
                     </div>
-                    
-                </section>
+    
+                    <div clas="contato">
+                        <Ul><br>
+                            <LI>Contato: 319284654</LI>
+                            <li>Email: amishdfiasnf@gmail.com</li>
+                            <li>Localização: Rua Baiano n66, Belo Horizonte MG</li>
+                        </Ul>
+                    </div>
+                
+            </section>
+            </div>
+           
+
             
         </main>
         
