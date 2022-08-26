@@ -8,16 +8,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <title>Home de Usuário</title>
-    <script>
-        function botaonav() {
-        var x = document.getElementById("header");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-        }
-    </script>
     <style src="style.css" type="text/css">
         
     </style>
@@ -28,21 +18,33 @@
     <head>
 
     <body>
-        <header>
-            <div class="topnav zindex" id="header">
-            <h1>PLATAFORMA GESTOR AGRO DOCS</h1>
-            <a href="#dados" class="active">Perfil</a>
-            <a href="#quadro">Avisos</a>
-            <a href="#tabela">Fazendas</a>
-            <a href="#tabela2">Análises</a>
-            <a href="javascript:void(0);" class="icon" onclick="botaonav()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-    </header>
+        
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                Gestor AgroDocs
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+              <a href="//github.io/jo_geek" target="_blank">Fazendas</a>
+              <a href="http://stackoverflow.com/users/4084003/" target="_blank">Análises</a>
+              <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Avisos</a>
+              <a href="https://codepen.io/jo_Geek/" target="_blank">Perfil</a>
+            </div>
+          </div>
 
         <main>
 
+            <img class="imagem" src="https://safras.com.br/wp-content/uploads/2021/11/defensivosaplicacao-digital.agrishow.jpg" alt="">
             <div class="main">
                 
                 <section id="dados" style="color: black;">
