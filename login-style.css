@@ -1,53 +1,145 @@
+html{
+    width: 100vw;
+    height: 100vh;
+}
 body{
-    background-color: rgb(75, 105, 134);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     font-family: "Poppins", sans-serif;
+    margin: 0;
 }
-.secao{
-    display: inline-grid;
-    position: absolute;
-    top: 23vh;
-    left: 18%;
-    height: 50vh;
-    width: 65vw;
-    background-color: rgb(255, 255, 255);
-    border-radius: 7px;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-evenly;
-    box-shadow: 12px 11px 32px -4px rgba(0,0,0,0.56);
+
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0ffffde;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.imagem{
-    position: relative;
-    width: 80%;
-    height: 100%;
-    border-radius: 7px;
-}
-label{
-    font-size: 20px;
-}
-.input{
-    outline: 1px solid white;
-    text-align: left;
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-decoration: underline;
-    border: none;
-    left: 0%;
-    width: 300px;
-    height: 20%;
+    color: #77ffc0;
+    /*text-decoration-color: rgb(114, 49, 114);*/
 }
-.input::placeholder{
+.left-login h1{
+    font-size: 3vw;
     position: relative;
-    text-align: left;
+    top: 10%;
+    color: #2f2841;
 }
-form h1{
-    font-size: 40px;
-    text-decoration: underline overline;
-    text-decoration-color: rgb(114, 49, 114);
+.left-login-img{
+    width: 35vw;
 }
-form button{
-    cursor: pointer;
-    padding: 8px 25px;
-    border-radius: 7px;
-    background-image: linear-gradient(to right, rgb(54, 128, 192), rgb(78, 78, 189));
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+.card-login{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 35px;
+    background-color: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.card-login h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+.textField{
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*inverte os eixos de X e Y para o jusitfy-content (q agr é eixo Y) e align-items (q agr é eixo X)*/
+    align-items: flex-start;
+    justify-content: center;
+}
+.textField input{
+    width: 100%;
     border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box; /*considera padding, margin e etc. no tamanho da div e não permite que ela ultrapasse a div pai*/
+}
+.textField label{
+    margin-bottom: 10px;
+    color: #f0ffffde;
+}
+.textField input::placeholder{
+    color: #f0ffff94;
+}
+.btn-login{
+    width: 70%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00000056;
+}
+@media only screen and (max-width: 900px) {
+    body{
+        background-color: #f0ffffde;
+    }
+    .main-login{
+        width: 100vw;
+    }
+    .card-login{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .main-login{
+        flex-direction: column;
+        position: absolute;
+        top: 160px;
+    }
+    .left-login h1{
+        font-weight: 800;
+        font-size: 25px;
+    }
+    .left-login {
+        height: auto;
+        width: 100vw;
+    }
+    .right-login {
+        height: auto;
+        width: 110vw;
+    }
+    .left-login-img{
+        width: 50vw;
+    }
+    .card-login {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+        position: absolute;
+        top: 150px;
+    }
 }
