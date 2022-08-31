@@ -12,27 +12,35 @@
 </head>
 <body>
     <main>
-        <section class="secao">
-                <img class="imagem" src="https://st.depositphotos.com/27205200/57070/v/450/depositphotos_570705776-stock-illustration-chicken-farm-logo-design-vector.jpg">
-            <form action="file:///C:/Users/Win-10/Documents/Programa%C3%A7%C3%A3o/Projetos/Projeto%20Agro/C%C3%B3digo/home.html?">
-                <h1>
-                    <b>Login</b>
-                </h1>
-                <div class="inputs">
-                    <label>Email</label><br>
-                    <input class="input" type="text" placeholder="Insira Seu Email" required><br><br>
-                    <label>Senha</label><br>
-                    <input class="input" type="password" placeholder="Insira Sua Senha" required>
-                    
-                </div><br>
+        
+        <div class="main-login">
+            <div class="left-login">
+                <h1><b></b>Conheça nossa Plataforma!</b></h1>
+                <img class="imagem" src="./images/farm.svg" class="left-login-img">
+            </div>
+            
+            <div class="right-login">
+                <form class="card-login" action="file:///C:/Users/Win-10/Documents/Programa%C3%A7%C3%A3o/Projetos/Projeto%20Agro/C%C3%B3digo/home.html?">
                 
-                <button>
-                    ENTRAR
-                </button><br>
+                    <h1> Insira seus Dados</h1><br>
+                    
+                        <div class="textField">
+                            <label for="email">Email</label>
+                            <input class="input" name="email" type="text" placeholder="Email..." required>   
+                        </div><br>
+                        <div class="textField">
+                            <label for="senha">Senha</label>
+                            <input class="input" type="password" name="senha" placeholder="Senha..." required>
+                        </div>
 
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Esqueci Minha Senha</a>
-            </form>
-        </section>
+                            <button class="btn-login">
+                                ENTRAR
+                            </button>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="a-pass">Esqueci Minha Senha</a>
+                    </div>
+                </form>
+            
+        </div>
     </main>
 </body>
 </html>
