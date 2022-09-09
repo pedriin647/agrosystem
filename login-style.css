@@ -104,6 +104,24 @@ body * {
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00000056;
 }
+
+.btn-login:hover{ /*Colocando uma cor um pouco mais clara para dar um efeito ao passar o mouse por cima */
+    background: #2c775cbd;
+}
+
+.btn-login:active{ /* muda a cor do texto para preto criando um alerta visual de que o botão foi clicado */
+    color: black;
+}
+
+.a-pass{ /* estilização simples na tag <a> de redefinir senha para adequar a página*/
+    text-decoration: none;
+    color: black;
+}
+
+.a-pass:hover{ /*hover simples para feedback visual*/
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 800px) {
     body{
         background-color: #f0ffffde;
